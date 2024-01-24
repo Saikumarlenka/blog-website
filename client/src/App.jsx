@@ -7,12 +7,14 @@ import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import Projects from "./pages/Projects";
+import Header from "./components/Header";
 
 
 
 function App() {
   return (
     <BrowserRouter>
+    <Header></Header>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
